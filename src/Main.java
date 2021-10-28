@@ -63,9 +63,6 @@ public class Main {
         //calls method from the Game class, which returns a String from either the easy or the hard ArrayList
         String wordToGuess = Game.getStringBasedOnDifficulty(choiceOfDifficulty);
 
-        //should be deleted upon being turned in
-        //System.out.println("Word to guess is: " + wordToGuess);
-
         Game.fillRevisedHiddenWordArray(wordToGuess); //adds n number of '_' to the revisedHiddenWordArray, based on the number of letters in the String 'wordToGuess'
         Game.fillHiddenWordArray(wordToGuess); //adds the individual letters of the String 'wordToGuess' to hiddenWordArray
 
