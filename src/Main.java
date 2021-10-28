@@ -64,7 +64,7 @@ public class Main {
         String wordToGuess = Game.getStringBasedOnDifficulty(choiceOfDifficulty);
 
         //should be deleted upon being turned in
-        System.out.println("Word to guess is: " + wordToGuess);
+        //System.out.println("Word to guess is: " + wordToGuess);
 
         Game.fillRevisedHiddenWordArray(wordToGuess); //adds n number of '_' to the revisedHiddenWordArray, based on the number of letters in the String 'wordToGuess'
         Game.fillHiddenWordArray(wordToGuess); //adds the individual letters of the String 'wordToGuess' to hiddenWordArray
@@ -101,7 +101,7 @@ public class Main {
                 ArrayList<Integer> indicesOfGuessedLettersArray = Game.getIndexOfLetterInWord(wordToGuess, letter);
 
                 //the method called in function 'reveals' the correct letters of the revisedHiddenWordArray
-                //(replacing the '_' with the rightly guessed letter at the place/places it is represented)
+                //(replacing the '_' with the rightly guessed letter at the place/places it is repres®ented)
                 ArrayList<Character> revisedHiddenWordArray = Game.reviseHiddenWord(indicesOfGuessedLettersArray);
                 AsciiArt.progressionInHanging(count); //asciiArt is printed as usual
 
